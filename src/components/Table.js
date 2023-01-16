@@ -9,13 +9,13 @@ function Table({transactions}) {
     
     return (
         <>
-        <table>
+        <table className="m-auto table-auto border border-collapse border-slate-900 font-mono text-lg bg-white ">
             <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Descriprion</th>
-                    <th>Category</th>
-                    <th>Amount</th>
+                <tr className="font-black">
+                    <th className="p-4 border border-slate-400">Date</th>
+                    <th className="p-4 border border-slate-400">Descriprion</th>
+                    <th className="p-4 border border-slate-400">Category</th>
+                    <th className="p-4 border border-slate-400">Amount</th>
                 </tr>
             </thead>
             <tbody>

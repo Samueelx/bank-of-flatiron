@@ -16,12 +16,12 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="bg-teal-300/75">
     <Header />
     <div>
       <Table transactions={transactions}/>
     </div>
-    </>
+    </div>
   );
 }
 
