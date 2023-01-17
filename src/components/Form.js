@@ -53,7 +53,7 @@ function Form({ onAddTransaction }) {
                     <input type="text" onChange={handleAmountChange} value={amount} className="form-input block mx-auto px-4 py-3 rounded-md"/>
                 </label>
 
-                <button type="submit" className="block bg-transparent hover:bg-blue-800 text-blue-500 hover:text-white font-bold py-2 px-4 rounded border border-blue-600 hover:border-transparent mx-auto my-4">Submit</button>
+                <button type="submit" className="block bg-transparent hover:bg-cyan-800 text-blue-500 hover:text-white font-bold py-2 px-4 rounded border border-blue-600 hover:border-transparent mx-auto my-4">Submit</button>
             </form>
         </div>
     );
