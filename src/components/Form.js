@@ -6,8 +6,8 @@ function Form() {
     }
 
     return (
-        <div className="m-8 p-6 bg-white">
-            <form className="mx-auto rounded">
+        <div className="p-40">
+            <form className="mx-auto p-12 rounded bg-white">
                 <label htmlFor="description" className="block mx-auto"> Description
                     <input type="text" onChange={handleChange} className="form-input block mx-auto px-4 py-3"/>
                 </label>
