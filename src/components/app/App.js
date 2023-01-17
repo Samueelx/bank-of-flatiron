@@ -9,10 +9,10 @@ function App() {
   const [transactions, setTransactions] = useState([]);
 
   useEffect(() => {
-    fetch("https://api.npoint.io/4ea1a71ea4093e511948")
+    fetch("https://json-server-vercel-rose.vercel.app/transactions")
     .then(response => response.json())
     .then(data => {
-      setTransactions(data.transactions);
+      setTransactions(data);
     });
   }, []);
 
