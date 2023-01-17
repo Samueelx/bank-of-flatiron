@@ -16,13 +16,18 @@ function App() {
     });
   }, []);
 
+  function addTransaction(newTransaction) {
+    const updatedTransactions = [...transactions, newTransaction];
+    setTransactions(updatedTransactions);
+  }
+
   return (
     <div className="bg-teal-300/75">
       <Header />
       <div>
         <Table transactions={transactions}/>
       </div>
-      <Form />
+      <Form onAddTransaction={addTransaction}/>
     </div>
   );
 }
