@@ -2,7 +2,7 @@ import React from "react";
 import Transaction from "./Transaction";
 
 function Table({transactions}) {
-    console.log("In Table Component: ", transactions)
+    // console.log("In Table Component: ", transactions)
     const rows = transactions.map((item) => {
         return <Transaction key={item.id} date={item.date} description={item.description} category={item.category} amount={item.amount} />
     });

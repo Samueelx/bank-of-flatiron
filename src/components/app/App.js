@@ -21,9 +21,17 @@ function App() {
     setTransactions(updatedTransactions);
   }
 
+  function searchTransactions(searchValue) {
+    const results = transactions.filter((transaction) => {
+      return transaction.description.toLowerCase().includes(searchValue)
+    });
+
+    setTransactions(results);
+  }
+
   return (
     <div className="bg-teal-300/75">
-      <Header />
+      <Header onSearch={searchTransactions}/>
       <div>
         <Table transactions={transactions}/>
       </div>
